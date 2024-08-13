@@ -62,11 +62,8 @@ async def read_transactions(db: db_dependency, skip: int = 0, limit: int =100):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return RedirectResponse(url="/docs")
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int):
-    return RedirectResponse (url="/docs")
 
 
 # Explanation:
