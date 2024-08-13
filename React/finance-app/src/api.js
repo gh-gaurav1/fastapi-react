@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: 'http://localhost:8000',
+    baseURL:'https://fastapi-react-fq39.onrender.com/docs#/',
 });
 
 export default api;
